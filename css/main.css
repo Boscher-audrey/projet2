@@ -9,7 +9,6 @@
     --text-color-light: #616161;
 }
 
-/* @media screen car handheld (qui a été écrit pour les périphériques mobiles) est ignorée par la grande majorité des navigateurs mobiles qui se considèrent comme un média screen */
 
 @media only screen and (min-width: 1200px) {
     /* desktop */
