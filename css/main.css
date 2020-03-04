@@ -9,6 +9,132 @@
     --text-color-light: #616161;
 }
 
+/* @media screen car handheld (qui a été écrit pour les périphériques mobiles) est ignorée par la grande majorité des navigateurs mobiles qui se considèrent comme un média screen */
+
+@media only screen and (min-width: 1200px) {
+    /* desktop */
+    .ui.grid.container.cv {
+        width: 1190px !important;
+    }
+
+    .container {
+        flex-flow: row-reverse !important;
+    }
+
+    .subtitle_text {
+        padding-left: 0 !important;
+    }
+
+    .description_education {
+        padding-left: 21px !important;
+    }
+
+    .name_section {
+        margin-top: 115px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+    /* tablet */
+    .ui.grid.container.cv {
+        width: auto !important;
+    }
+
+    .container {
+        flex-flow: row-reverse !important;
+    }
+
+    .subtitle_text {
+        padding-left: 0 !important;
+    }
+
+    .description_education {
+        padding-left: 21px !important;
+    }
+
+    .name_section {
+        margin-top: 115px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* mobile phone */
+    .ui.grid.container.cv {
+        width: auto !important;
+        margin: 0 !important;
+    }
+
+    .ui.grid {
+        display: block !important;
+    }
+
+    .left_side_panel {
+        width: auto !important;
+    }
+
+    .right_side_panel {
+        width: auto !important;
+    }
+
+    .picture_section {
+        display: none !important;
+    }
+
+    .hobbies_footer {
+        position: inherit !important;
+        width: auto !important;
+    }
+
+    .firstname {
+        line-height: normal !important;
+    }
+
+    .name_section {
+        margin-top: 60px !important;
+    }
+
+    .ui.grid > [class*="five wide"].column.date_education, .ui.grid > [class*="five wide"].column.date_experience {
+        display: block !important;
+        width: 100% !important;
+        padding-bottom: 0 !important;
+    }
+
+    .ui.grid > [class*="ten wide"].column.description_education, .ui.grid > [class*="ten wide"].column.description_experience {
+        width: 100% !important;
+        padding-top: 0 !important;
+    }
+
+    br:not(.contact_br) {
+        display: none;
+    }
+
+    .contact_section {
+        text-align: center;
+    }
+
+    div.title_section {
+        margin-bottom: 90px;
+    }
+}
+
+@media only screen and (max-width: 714px) {
+    .subtitle_text {
+        padding-left: 38px !important;
+        line-height: 1em !important;
+    }
+
+    .subtitle_text.xp {
+        padding-top: 10px !important;
+    }
+
+    .ui.grid > [class*="eight wide"].column.info_recommandation, .ui.grid > [class*="seven wide"].column.info_recommandation {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+
 body {
     background: #0e0e0e !important;
 }
@@ -18,12 +144,6 @@ body {
     padding-left: 47px;
     padding-bottom: 70px;
     position: relative;
-}
-
-@media only screen and (min-width: 1200px) {
-    .ui.grid.container.cv {
-        width: 1190px !important;
-    }
 }
 
 a {
@@ -123,10 +243,6 @@ a:hover {
     border-right: 2px solid var(--border-color-right);
 }
 
-.name_section {
-    margin-top: 115px !important;
-}
-
 .firstname {
     font-size: 60px;
     font-family: 'Roboto', sans-serif !important;
@@ -160,7 +276,7 @@ a:hover {
 }
 
 .hline_large {
-    width: 695px;
+    width: 96%;
     height: 0;
     border: 1px solid var(--background-color-left);
     margin-top: 11px;
@@ -177,7 +293,6 @@ a:hover {
 
 .subtitle_text {
     padding-top: 26px !important;
-    padding-left: 0 !important;
     font-size: 1.96em;
     font-weight: bold;
     font-family: Arial, sans-serif;
@@ -227,18 +342,17 @@ a:hover {
 
 .description_education {
     margin-top: 2px;
-    padding-left: 21px !important;
     margin-bottom: 14px;
 }
 
-.description_education h1 {
+.description_education h1, .description_experience h1 {
     font-size: 21px;
     font-family: Arial, sans-serif;
     margin-bottom: 0 !important;
     text-transform: uppercase;
 }
 
-.description_education h2 {
+.description_education h2, .description_experience h2 {
     font-size: 16px;
     font-family: Arial, sans-serif;
     margin-top: 9px;
