@@ -18,6 +18,8 @@
 
     .container {
         flex-flow: row-reverse !important;
+        padding-left: 47px;
+        padding-top: 0.8% !important;
     }
 
     .subtitle_text {
@@ -30,6 +32,10 @@
 
     .name_section {
         margin-top: 115px !important;
+    }
+
+    .description_education h1, .description_experience h1 {
+        font-size: 21px;
     }
 
 }
@@ -42,6 +48,8 @@
 
     .container {
         flex-flow: row-reverse !important;
+        padding-left: 47px;
+        padding-top: 0.8% !important;
     }
 
     .subtitle_text {
@@ -55,10 +63,18 @@
     .name_section {
         margin-top: 115px !important;
     }
+
+    .description_education h1, .description_experience h1 {
+        font-size: 21px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     /* mobile phone */
+    .container {
+        margin: 0 1em 2.5em !important;
+    }
+
     .ui.grid.container.cv {
         width: auto !important;
         margin: 0 !important;
@@ -113,7 +129,23 @@
     }
 
     div.title_section {
-        margin-bottom: 90px;
+        margin-bottom: 60px;
+    }
+
+    .subtitle_text {
+        font-size: 1.6em !important;
+    }
+
+    .subtitle_icon {
+        font-size: 35px !important;
+    }
+
+    .description_education h1, .description_experience h1 {
+        font-size: 16px;
+    }
+
+    .date {
+        font-size: 14px !important;
     }
 }
 
@@ -139,8 +171,6 @@ body {
 }
 
 .container {
-    padding-top: 0.8% !important;
-    padding-left: 47px;
     padding-bottom: 70px;
     position: relative;
 }
@@ -345,7 +375,6 @@ a:hover {
 }
 
 .description_education h1, .description_experience h1 {
-    font-size: 21px;
     font-family: Arial, sans-serif;
     margin-bottom: 0 !important;
     text-transform: uppercase;
