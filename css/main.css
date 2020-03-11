@@ -73,6 +73,7 @@
     /* mobile phone */
     .container {
         margin: 0 1em 2.5em !important;
+        padding-top: 0 !important;
     }
 
     .ui.grid.container.cv {
